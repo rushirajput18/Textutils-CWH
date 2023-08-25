@@ -6,7 +6,9 @@ export default function About() {
         color: 'white',
         backgroundColor : 'black'
     })
-    const[btnName, setBtnName] = useState('Enable Dark Mode');
+    setmyStyle();
+    // const[btnName, setBtnName] = useState('Enable Dark Mode');
+    /*
     const handleStyle = () => {
         if(myStyle.color === 'white')
         {
@@ -26,7 +28,7 @@ export default function About() {
             setBtnName('Enable Light Mode')
 
         }
-    } 
+    } */
   return (
     <>
     <div className="container" style={myStyle}>
@@ -127,7 +129,7 @@ export default function About() {
         </div>
       </div>
       <div className="container my-2 ">
-      <button type="button" class="btn btn-primary" onClick={handleStyle}>{btnName}</button>
+      {/* <button type="button" class="btn btn-primary" onClick={handleStyle}>{btnName}</button> */}
       </div>
     </div>
     </>
